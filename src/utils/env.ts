@@ -5,7 +5,7 @@ const STRIPE_SECRET_KEY = process.env?.STRIPE_SECRET_KEY || '',
     STRIPE_PRICE_ID = process.env?.STRIPE_PRICE_ID || '',
     WEBHOOK_SECRET = process.env?.WEBHOOK_SECRET || '';
 
-if(!STRIPE_PRICE_ID) {
+if(!STRIPE_SECRET_KEY) {
     throw new Error(`STRIPE_SECRET_KEY missing!`);
 } else if(!STRIPE_PRICE_ID) {
     throw new Error(`STRIPE_PRICE_ID missing!`);
